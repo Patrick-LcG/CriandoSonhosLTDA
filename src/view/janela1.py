@@ -32,7 +32,14 @@ class Janela1:
         menu = ItemControler.mostrar_itens_menu(database_name)
         
         print('----------Menu----------\n')
-        print(f'{menu} \n')
+        
+        # 1. Ajustando a exbição do menu de cadastro.
+        # print(f'{menu} \n') -> antigo
+        
+        for item_id, nome, preco, tipo, descricao in menu: 
+            print(f"{item_id} -> {nome.capitalize()} - R$ {preco:.2f} <-> Tipo: {tipo.capitalize()} - Descrição: {descricao.title()}")
+        print('\n')
+        
         while a=='y':
             lista_itens = []
             valor_total=0
