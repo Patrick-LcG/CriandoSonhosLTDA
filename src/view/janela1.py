@@ -107,7 +107,7 @@ class Janela1:
             if delivery: 
                 endereco = str(input('Endereco:'))
             else:
-                endereco = "Sem delivery" 
+                endereco = "Nao informado" 
             
             # 4 -> ajustando lógica para salvar status do pedido, agora com validação efetiva
             # Problema recaía sobre a lógica antiga -> if-(if-else), que se mostrava errada e inconsistente
